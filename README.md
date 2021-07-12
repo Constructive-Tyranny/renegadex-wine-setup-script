@@ -1,3 +1,6 @@
+# This repo is "broken" thanks to the introduction of Wine 6. Please use the Lutris solution and only use this repo for reference.  
+**[Lutris](https://lutris.net/games/renegade-x/)** <-- Lutris solution.
+
 # renegadex-wine-setup-script
 Script that was on the RenegadeX wiki created by @Testman42, but uploaded here because no-one checks the wiki anyway. ( I don't either)
 
