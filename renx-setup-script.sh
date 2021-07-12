@@ -17,7 +17,7 @@ WINEPREFIX="$HOME/RenegadeXWine" winetricks -q d3dx9_43
 WINEPREFIX="$HOME/RenegadeXWine" winetricks -q win7
 WINEPREFIX="$HOME/RenegadeXWine" winetricks -q dotnet452
 WINEPREFIX="$HOME/RenegadeXWine" winetricks -q win7
-# Obtain the Renegade_X_Installer.msi from DigitalOcean and install it.
+# Obtain the Renegade_X_Installer.msi from BunnyCDN and install it.
 echo Attempting to download Renegade_X_Installer
 wget https://renxdownloads.b-cdn.net/Renegade_X_Installer-3f1857a.msi
 #Let's warn the user.

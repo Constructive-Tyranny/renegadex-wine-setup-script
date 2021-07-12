@@ -10,6 +10,8 @@ An up to date version of **[WINE](https://wiki.winehq.org/Download)**, WINE stag
 
 **[Wget](https://www.gnu.org/software/wget/)** package.
 
+**[cabextract](https://www.cabextract.org.uk/)** package.
+
 The latest version of winetricks.  
 (Instructions)  
 ```shell  
@@ -24,7 +26,7 @@ Although we are not sure if this is actually necessary, Mono-Complete is also re
 ## Features and usage.
 Although the script has the potential to be fully automatic, I've a general tendency to not do that.  
 Users should be aware of what they're using and doing.  
-The script will first create a new wineprefix called: RenegadeXWine.  
+The script will create a new wineprefix called: RenegadeXWine.  
 And then proceed with downloading the DLL's necessary to run both the UDK.exe and the launcher.
 
 ### Usage  
