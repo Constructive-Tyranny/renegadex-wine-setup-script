@@ -1,6 +1,3 @@
-# This repo is "broken" thanks to the introduction of Wine 6. Please use the Lutris solution and only use this repo for reference.  
-**[Lutris](https://lutris.net/games/renegade-x/)** <-- Lutris solution.
-
 # renegadex-wine-setup-script
 Script that was on the RenegadeX wiki created by @Testman42, but uploaded here because no-one checks the wiki anyway. ( I don't either)
 
@@ -9,21 +6,19 @@ As stated here above, the Wiki is rather hard to find and outdated, combined wit
 
 ---
 ## Requirements
-An up to date version of **[WINE](https://wiki.winehq.org/Download)**, WINE stagging is recommended.
+An up to date version of **[WINE](https://wiki.winehq.org/Download)**.  
+*So that we can actually use the prefix*  
 
-**[Wget](https://www.gnu.org/software/wget/)** package.
+**[Wget](https://www.gnu.org/software/wget/)** package.  
+*So we can download our requirements*  
 
-**[cabextract](https://www.cabextract.org.uk/)** package.
+**Docker**  
+*So we can use the update container to download the game*  
 
-The latest version of winetricks.  
-(Instructions)  
-```shell  
-sudo wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks \
-        -O /usr/bin/winetricks \
-    && sudo  chmod +rx /usr/bin/winetricks
-```  
+**ACL**  
+*So we can set permissions on the WINE Prefix to allow the container to operate*  
 
-Although we are not sure if this is actually necessary, Mono-Complete is also recommended.
+*Although we are not sure if this is actually necessary, Mono-Complete is also recommended.*
 
 
 ## Features and usage.
@@ -35,6 +30,6 @@ And then proceed with downloading the DLL's necessary to run both the UDK.exe an
 ### Usage  
 Download and execute this script.
 ```shell
-wget https://raw.githubusercontent.com/Constructive-Tyranny/renegadex-wine-setup-script/master/renx-setup-script.sh && chmod +rx renx-setup-script.sh && sh renx-setup-script.sh
+wget https://raw.githubusercontent.com/Constructive-Tyranny/renegadex-wine-setup-script/master/rxWine-setup.sh && chmod +rx rxWine-setup.sh && bash rxWine-setup.sh
 ```  
 Once the script starts, a message from WINE setting up config will appear, afterwards (as you may see in the terminal) it starts installing all dependencies in the wineprefix.
