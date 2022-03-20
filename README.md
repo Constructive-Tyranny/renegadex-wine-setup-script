@@ -33,3 +33,4 @@ Download and execute this script.
 wget https://raw.githubusercontent.com/Constructive-Tyranny/renegadex-wine-setup-script/master/rxWine-setup.sh && chmod +rx rxWine-setup.sh && bash rxWine-setup.sh
 ```  
 Once the script starts, a message from WINE setting up config will appear, afterwards (as you may see in the terminal) it starts installing all dependencies in the wineprefix.
+**Any warning from WINE should be ignored, if a app fails to launch, don't view the report. That's legit how it works here.**
