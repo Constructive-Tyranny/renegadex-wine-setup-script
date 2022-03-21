@@ -1,5 +1,5 @@
 # renegadex-wine-setup-script
-Script that was on the RenegadeX wiki created by @Testman42, but uploaded here because no-one checks the wiki anyway. ( I don't either)
+A script created by Sho & Testman to download & install all dependencies for Renegade X on Linux.
 
 ## Why?
 As stated here above, the Wiki is rather hard to find and outdated, combined with the Lutris solution starting to fail, I decided to host a modified script here that adresses most issues people could have trying to get Renegade X to run using wine.
