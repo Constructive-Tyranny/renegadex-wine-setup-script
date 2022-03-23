@@ -32,7 +32,7 @@ A) Renegade X Launcher Installer
 B) Unreal Engine 3 Redistributable    
 <br>
 Optional:  
-D) A docker image which can run Sonny's update tool to download & update the game.  
+C) A docker image which can run Sonny's update tool to download & update the game.  
 <br>
 By installing dotnet452 into the prefix, you could get the normal launcher to work, but since this launcher barely works, it is recommended to use the [container](https://github.com/Constructive-Tyranny/docker-renegadex-updater) solution.
 # Setup & usage 
@@ -49,8 +49,9 @@ A) Game can be ran from the ``launchRenegadeX.sh`` script in this repo. (you can
 B) By executing this in a terminal:  
 - ``WINEPREFIX="$HOME/Games/RenegadeXWine" wine "$HOME/Games/RenegadeXWine/drive_c/Program Files (x86)/Renegade X/Binaries/Win64/UDK.exe"``
 
-----
-## Known bugs & errors.  
+
+# Known bugs & errors:  
+
 ~~**The game itself**~~  
 
 **x has failed to launch! Would you like to view the report?:**  
@@ -70,4 +71,8 @@ B) By executing this in a terminal:
 - Try again.. I'm not joking, it's like a 75% chance to start the game.  
 
 **Certain maps don't load and cause a crash:**
-- We're currently investigating that.
+- We're currently investigating that.  
+  
+**Game takes ages to install/update:**
+- You can cat the log of the container by using: ``cat $HOME/Games/RenegadeXWine/drive_c/Program Files (x86)/Renegade X/Launcher/logs/logs/lib_renegade_x_launcher_rCURRENT.log``
+- There is a fair chance the mirror it selected is shitting itself (looks at NA mirrors & Luxemburg mirror).. Bear with it is all I can say..
