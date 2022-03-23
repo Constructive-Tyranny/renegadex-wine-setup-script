@@ -2,7 +2,8 @@
 A script created by Sho & Testman to download & install all dependencies for Renegade X on Linux.
 
 ## Why?
-As stated here above, the Wiki is rather hard to find and outdated, combined with the Lutris solution starting to fail, I decided to host a modified script here that adresses most issues people could have trying to get Renegade X to run using wine.
+The wiki is rather hard to find and outdated, combined with the Lutris solution starting to fail, I decided to host a modified script here that adresses most issues people could have trying to get Renegade X to run using wine.  
+The techniques in this script can be used to fix Lutris as well, Lutris should be preforming better than this method if the techniques are applied.
 
 ---
 ## Requirements
@@ -34,12 +35,39 @@ Optional:
 D) A docker image which can run Sonny's update tool to download & update the game.  
 <br>
 By installing dotnet452 into the prefix, you could get the normal launcher to work, but since this launcher barely works, it is recommended to use the [container](https://github.com/Constructive-Tyranny/docker-renegadex-updater) solution.
-# Usage  
+# Setup & usage 
+## Setup:
 Download and execute this script.
 ```shell
 wget https://raw.githubusercontent.com/Constructive-Tyranny/renegadex-wine-setup-script/master/rxWine-setup.sh && chmod +rx rxWine-setup.sh && bash rxWine-setup.sh
 ```  
-Once the script starts, a message from WINE setting up config will appear, afterwards (as you may see in the terminal) it starts downloading & installing dependencies.   
+Once the script starts, a message from WINE setting up config will appear, afterwards (as you may see in the terminal) it starts downloading & installing dependencies. 
+
+## Usage:
+A) Game can be ran from the ``launchRenegadeX.sh`` script in this repo. (you can enable the commented stuff to check for updates using the container)  
+
+B) By executing this in a terminal:  
+- ``WINEPREFIX="$HOME/Games/RenegadeXWine" wine "$HOME/Games/RenegadeXWine/drive_c/Program Files (x86)/Renegade X/Binaries/Win64/UDK.exe"``
 
 ----
-## **Any warning from WINE should be ignored, if an app fails to launch, don't view the report. This will cause the setup / execution to fail!**
+## Known bugs & errors.  
+~~**The game itself**~~  
+
+**x has failed to launch! Would you like to view the report?:**  
+- *Any warning from WINE should be ignored, if an app fails to launch, don't view the report. This will cause the setup / execution to fail!*
+<br>
+
+**Crash when quickly reloading the in-game serverlist:**  
+- Known error, not limited to just WINE. your best bet is to join the IRC of CT and watch when someone leaves the game.  
+  
+**Crash when running the game with the ``-nomovies`` parameter**  
+- Known error, recommend keeping movies on.  
+
+**Startup movie kills my ears:**  
+- You get used to it. ._.  
+
+**Crash when launching the game:**
+- Try again.. I'm not joking, it's like a 75% chance to start the game.  
+
+**Certain maps don't load and cause a crash:**
+- We're currently investigating that.
