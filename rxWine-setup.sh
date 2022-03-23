@@ -86,7 +86,7 @@ echo "======================================================================"
 echo "Calling on the container to download the game. This can take a while.."
 echo "======================================================================"
 echo "PS: You can ``cat`` the log file in a new terminal by executing:"
-echo "cat $HOME/Games/RenegadeXWine/drive_c/Program Files (x86)/Renegade X/Launcher/logs/logs/lib_renegade_x_launcher_rCURRENT.log "
+echo "cat $HOME/Games/RenegadeXWine/drive_c/Program Files (x86)/Renegade X/Launcher/logs/logs/lib_renegade_x_launcher_rCURRENT.log"
 sudo docker run -it -v "$PWD/RenegadeXWine/drive_c/Program Files (x86)/Renegade X/":/mounted_volume basimth/rx-updater:latest
 echo "Done!"
 echo "======================================="
