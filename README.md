@@ -7,7 +7,10 @@ As stated here above, the Wiki is rather hard to find and outdated, combined wit
 ---
 ## Requirements
 An up to date version of **[WINE](https://wiki.winehq.org/Download)**.  
-*So that we can actually use the prefix*  
+*So that we can actually set up and play the game*  
+
+**[Winetricks](https://github.com/Winetricks/winetricks)**  (Make sure you get the latest version for this URL)  
+*So we can set up the prefix*  
 
 **[Wget](https://www.gnu.org/software/wget/)** package.  
 *So we can download our requirements*  
@@ -18,8 +21,6 @@ An up to date version of **[WINE](https://wiki.winehq.org/Download)**.
 **[ACL](https://wiki.archlinux.org/title/Access_Control_Lists)**  
 *So we can set permissions on the WINE Prefix to allow the container to operate*  
 
-*Although we are not sure if this is actually necessary, Mono-Complete is also recommended.*
-
 
 ## Features and usage.
 ~~Although the script has the potential to be fully automatic, I've a general tendency to not do that.~~  
@@ -27,13 +28,12 @@ An up to date version of **[WINE](https://wiki.winehq.org/Download)**.
 
 This script will download all the required things, this includes:  
 A) Renegade X Launcher Installer  
-B) Unreal Engine 3 Redistributable  
-C) A WINE prefix with all required DLL's to run the game.   
-*(This is using an older WINE prefix which can still run the game without breaking dependencies.)*  
+B) Unreal Engine 3 Redistributable    
 <br>
 Optional:  
 D) A docker image which can run Sonny's update tool to download & update the game.  
-
+<br>
+By installing dotnet452 into the prefix, you could get the normal launcher to work, but since this launcher barely works, it is recommended to use the [container](https://github.com/Constructive-Tyranny/docker-renegadex-updater) solution.
 # Usage  
 Download and execute this script.
 ```shell
